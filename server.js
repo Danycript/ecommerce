@@ -15,9 +15,6 @@ app.use(helmet());
 app.use(helmet.crossOriginOpenerPolicy({ policy: "same-origin" }));
 app.use(helmet.crossOriginResourcePolicy({ policy: "cross-origin" }));
 
-app.get("/", (req, res) => {
-  res.send("hello wolrd");
-});
 
 app.get("/brand", async (req, res) => {
   try {
